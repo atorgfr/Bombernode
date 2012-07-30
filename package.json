@@ -5,8 +5,9 @@
     "express": "2.5.10",
     "socket.io": "0.9.6",
     "jade": "0.26.3",
-    "qrcode": "x.x.x",
-    "canvas":"x.x.x"
+    "canvas":"x.x.x",
+    "qrcode": "x.x.x"
+
   },
   "engines": {
     "node": "0.6.18",
