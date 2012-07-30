@@ -1,4 +1,6 @@
-var socket = io.connect('http://quiet-waters-9754.herokuapp.com/');
+$('#qrcode').qrcode({render : "table", width: 64,height: 64,text: "1234"});
+
+var socket = io.connect();
 socket.on('connected',function(data){
 	socket.emit('enterroom',{id:1234});
 });

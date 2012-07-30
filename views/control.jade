@@ -4,16 +4,20 @@ html
     script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
     script(type='text/javascript', src='js/hammer.js')
     script(type='text/javascript', src='js/jquery.hammer.js')
+    script(type='text/javascript', src='js/jquery.qrcode.min.js')
 
   body
     div.up UP
+    br
     div.down DOWN
+    br
     div.left LEFT
+    br
     div.right RIGHT
-    #qrcode
+    br
     script(src='/socket.io/socket.io.js')
     script
-      var socket = io.connect('http://quiet-waters-9754.herokuapp.com/');
+      var socket = io.connect();
       socket.on('connected', function (data) {
       });
     script(type='text/javascript', src='js/controlmove.js')
