@@ -1,0 +1,18 @@
+!!! 5
+html
+  head
+    title GameQuery Test
+    link(rel='stylesheet', type='text/css', href='/css/jeu.css')
+  body
+    #qrcode
+      img(src='#{qr}')
+    #playground
+      a(href='#') START
+      #loading
+    
+    script(src='/socket.io/socket.io.js')
+    script(type='text/javascript', src='/js/move.js')
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+    script(type='text/javascript', src='/js/jquery.gamequery-0.7.0.js')
+    script(type='text/javascript', src='/js/testJeu.js')
+    

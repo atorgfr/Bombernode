@@ -1,0 +1,19 @@
+html
+  head
+    title
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+    script(type='text/javascript', src='js/hammer.js')
+    script(type='text/javascript', src='js/jquery.hammer.js')
+
+  body
+    div.up UP
+    div.down DOWN
+    div.left LEFT
+    div.right RIGHT
+    #qrcode
+    script(src='/socket.io/socket.io.js')
+    script
+      var socket = io.connect('http://truc1.com');
+      socket.on('connected', function (data) {
+      });
+    script(type='text/javascript', src='js/controlmove.js')
