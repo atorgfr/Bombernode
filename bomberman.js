@@ -12,11 +12,11 @@ app.use(express.static(__dirname + '/public',{ maxAge: 31557600000 }));
 app.listen(80);
 
 app.get('/', function(req, res){
-  var QRCode = require('qrcode');
-  QRCode.toDataURL('1234',function(err,url){ 
+  //var QRCode = require('qrcode');
+  //QRCode.toDataURL('1234',function(err,url){ 
     res.header('Content-Type','text/html');
-    res.render("game",{qr:url}); 
-  });
+    res.render("game",{qr:"url"}); 
+  //});
 });
 
 app.get('/control', function(req, res){
