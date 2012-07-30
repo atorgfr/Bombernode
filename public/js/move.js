@@ -1,4 +1,4 @@
-$('#qrcode').qrcode({render : "table", width: 64,height: 64,text: "1234"});
+$('#qrcode').qrcode({render : "table", width: 64,height: 64,text: "http://bombernode.heroku.com/control?room=1234"});
 
 
 var socket = io.connect();
