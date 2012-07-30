@@ -1,4 +1,4 @@
-var socket = io.connect('http://truc1.com');
+var socket = io.connect('http://quiet-waters-9754.herokuapp.com/');
 socket.on('connected',function(data){
 	socket.emit('enterroom',{id:1234});
 });
