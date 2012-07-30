@@ -12,7 +12,10 @@ app.set('views', __dirname + '/views');
 app.set('view options', { layout: false });
 app.use(express.static(__dirname + '/public',{ maxAge: 31557600000 }));
 
-app.listen(80);
+var port = process.env.PORT || 5000;
+app.listen(port, function() {
+  console.log("Listening on " + port);
+});
 
 app.get('/', function(req, res){
   //var QRCode = require('qrcode');
